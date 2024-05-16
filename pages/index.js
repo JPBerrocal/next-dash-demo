@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -12,8 +13,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">
-        <h1>Hola Mundo</h1>
+      <main className='bg-gray-100 min-h-screen' >
+        <Header /> 
       </main>
     </>
   );
