@@ -1,4 +1,7 @@
+import { BarChart } from "@/components/BarChart";
 import { Header } from "@/components/Header";
+import { RecentOrders } from "@/components/RecentOrders";
+import { TopCards } from "@/components/TopCards";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -14,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-gray-100 min-h-screen' >
-        <Header /> 
+        <Header />
+        <TopCards />
+        <div className="grid p-4 md:grid-cols-3 grid-cols-1 gap-4">
+          <BarChart />
+          <RecentOrders />
+        </div>   
       </main>
     </>
   );
